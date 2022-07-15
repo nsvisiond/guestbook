@@ -1,0 +1,30 @@
+ <form class="row g-3 needs-validation mt-4" novalidate action="/index.php" method="post">
+        <div class="col-md-6">
+            <label for="validationName" class="form-label">Имя</label>
+            <input name="name" type="text" class="form-control" id="validationName" required>
+            <div class="invalid-feedback">
+                Введите ваше имя
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationEmail" class="form-label">E-mail</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input name="email" type="text" class="form-control" id="validationEmail"
+                       aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Введите корректный e-mail
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="validationTextarea" class="form-label">Сообщение</label>
+            <textarea name="message" class="form-control" id="validationTextarea" required></textarea>
+            <div class="invalid-feedback">
+                Введите ваше сообщение
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Отправить сообщение</button>
+        </div>
+    </form>

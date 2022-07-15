@@ -1,0 +1,20 @@
+{
+  "name": "guestbook/production",
+  "description": "GuestBook",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Kirill Novozhilov",
+      "email": "kirk@nsvision.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.0",
+    "ext-mysqli": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "GuestBook\\": "src/"
+    }
+  }
+}
